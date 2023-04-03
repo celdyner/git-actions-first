@@ -2,7 +2,7 @@ name: Demo reactjs work flow
 on: [workflow_dispatch, push]
 Jobs:
   job_1:
-  runs-on: ubuntu-latest
-  steps:
-    -name: reacjs Step
-      run: echo "This is a reactjs step"
+    runs-on: ubuntu-latest
+    steps:
+      - name: reacjs Step
+        run: echo "This is a reactjs step"
