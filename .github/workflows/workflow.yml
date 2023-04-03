@@ -1,6 +1,6 @@
 name: Demo reactjs work flow
 on: [workflow_dispatch, push]
-Jobs:
+jobs:
   job_1:
     runs-on: ubuntu-latest
     steps:
