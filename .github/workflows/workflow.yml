@@ -1,7 +1,10 @@
 name: Demo reactjs work flow
-on: [workflow_dispatch, push]
+on: 
+  push:
+    branches:
+      - dev
 jobs:
-  lint:
+  test:
     runs-on: ubuntu-latest
     steps:
       - name: Get code
@@ -13,7 +16,7 @@ jobs:
       - name: Test code
         run: npm run test
   build:
-    needs: lint
+    needs: test
     runs-on: ubuntu-latest
     steps:
       - name: Get code
